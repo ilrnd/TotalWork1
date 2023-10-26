@@ -1,5 +1,6 @@
 package org.example;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 abstract class Animals {
@@ -26,6 +27,7 @@ abstract class Animals {
     }
 
     public void printAnimalInfo(){
-        System.out.printf("Name: %s, Date of Birth: %s, Commands: %s", name, dateOfBirth, commands);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        System.out.printf("Name: %s, Date of Birth: %s, Commands: %s", name, dateFormat.format(dateOfBirth), commands);
     }
 }

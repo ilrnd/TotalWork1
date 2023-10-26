@@ -18,11 +18,12 @@ public class Program {
         String name = scanner.nextLine();
         String strDate  = scanner.nextLine();
         String commands = scanner.nextLine();
-        Date date;
+        Date date = null;
         try {
             date = formater.parse(strDate);
         } catch (ParseException e) {
-            throw new RuntimeException(e);
+            //throw new RuntimeException("Incorrect date type, correct type: yyyy-MM-dd");
+            System.out.println("Incorrect date type, correct type: yyyy-MM-dd");
         }
         Animals animal = new Pets(name, date, commands);
         animal.printAnimalInfo();

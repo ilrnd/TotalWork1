@@ -13,8 +13,9 @@ public class Program {
         program.run();
     }
     public void run() {
+        Settings settings = new Settings();
         Scanner scanner = new Scanner(System.in);
-        SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat formater = new SimpleDateFormat(settings.getDateFormat());
         String name = scanner.nextLine();
         String strDate  = scanner.nextLine();
         String commands = scanner.nextLine();
@@ -23,9 +24,9 @@ public class Program {
             date = formater.parse(strDate);
         } catch (ParseException e) {
             //throw new RuntimeException("Incorrect date type, correct type: yyyy-MM-dd");
-            System.out.println("Incorrect date type, correct type: yyyy-MM-dd");
+            System.out.printf("Incorrect date format, correct format: %s", settings.getDateFormat());
         }
-        Animals animal = new Pets(name, date, commands);
+        Animals animal = new Pets(name, date);
         animal.printAnimalInfo();
     }
 }

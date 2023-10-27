@@ -1,11 +1,12 @@
 package org.example;
 
 import java.util.Date;
+import java.util.List;
 
-public class PackAnimals extends Animals{
-    String type;
+public abstract class PackAnimals extends Animals {
+    private final String type = "Pack Animals";
 
-    public PackAnimals(String name, Date dateOfBirth, String commands) {
-        super(name, dateOfBirth, commands);
+    public PackAnimals(String name, Date dateOfBirth) {
+        super(name, dateOfBirth);
     }
 }

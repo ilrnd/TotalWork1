@@ -67,6 +67,11 @@ ls
 `dpkg -i mysql-connector-j_8.1.0-1ubuntu22.04_all.deb`
 ![6a2bd647338101289658e5dc366dd0a4.png](../main/_resources/6a2bd647338101289658e5dc366dd0a4.png)
 
+Для удаления пакета:
+```
+sudo dpkg --purge mysql-connector-j_8.1.0-1ubuntu22.04_all
+```
+
 5. История команд в терминале Ubuntu
    - Сохранить и выложить историю ваших терминальных команд в Ubuntu.
 В формате: Файла с ФИО, датой сдачи, номером группы(или потока)

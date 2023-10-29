@@ -35,9 +35,9 @@ donkey
 cat Pets PackAnimals >HumanFriends.txt
 ls
 ```
-![805222410bb2a05527fa6870419f9ff4.png](../_resources/805222410bb2a05527fa6870419f9ff4.png)
+![805222410bb2a05527fa6870419f9ff4.png](../main/_resources/805222410bb2a05527fa6870419f9ff4.png)
 Проверим содержимое файла:
-![190f2b3dd53320ca2d65a19a536d5c3d.png](../_resources/190f2b3dd53320ca2d65a19a536d5c3d.png)
+![190f2b3dd53320ca2d65a19a536d5c3d.png](../main/_resources/190f2b3dd53320ca2d65a19a536d5c3d.png)
 
 2. Работа с директориями в Linux
    - Создать новую директорию и переместить туда файл "Human Friends".
@@ -51,12 +51,12 @@ ls
 3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
 - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
 `- sudo apt install mysql-server mysql-client`
-![f5978fc998e7e950904d9fedc19c6c5b.png](../_resources/f5978fc998e7e950904d9fedc19c6c5b.png)
+![f5978fc998e7e950904d9fedc19c6c5b.png](../main/_resources/f5978fc998e7e950904d9fedc19c6c5b.png)
 4. Управление deb-пакетами
 5. - Установить и затем удалить deb-пакет, используя команду `dpkg`.
 Скачиваем deb пакет. Для примера установим mysql-connector:
 `dpkg -i mysql-connector-j_8.1.0-1ubuntu22.04_all.deb`
-![6a2bd647338101289658e5dc366dd0a4.png](../_resources/6a2bd647338101289658e5dc366dd0a4.png)
+![6a2bd647338101289658e5dc366dd0a4.png](../main/_resources/6a2bd647338101289658e5dc366dd0a4.png)
 5. История команд в терминале Ubuntu
    - Сохранить и выложить историю ваших терминальных команд в Ubuntu.
 В формате: Файла с ФИО, датой сдачи, номером группы(или потока)

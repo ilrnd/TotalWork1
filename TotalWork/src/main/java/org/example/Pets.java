@@ -1,11 +1,16 @@
 package org.example;
 
+import java.time.LocalDate;
 import java.util.Date;
 
-public class Pets extends Animals{
-    private final String type = "Pets";
+public abstract class Pets extends Animals{
+    private final String superType = "Pets";
 
-    public Pets(String name, Date dateOfBirth) {
-        super(name, dateOfBirth);
+    public Pets(String name, LocalDate dateOfBirth, Commands commands) {
+        super(name, dateOfBirth, commands);
+    }
+
+    public String getSuperType() {
+        return superType;
     }
 }

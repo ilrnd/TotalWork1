@@ -1,32 +1,42 @@
 package org.example;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
 
-abstract class Animals {
-    String name;
-    Date dateOfBirth;
+public abstract class Animals {
+    final private String name;
+    final private LocalDate dateOfBirth;
+    private Commands commands;
 
-    public Animals(String name, Date dateOfBirth) {
+    public Animals(String name, LocalDate dateOfBirth, Commands commands) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;
+        this.commands = commands;
     }
 
     public String getName() {
         return name;
     }
 
-    public Date getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void getCommands() {
+    public Commands getCommands() {
+        return commands;
     }
 
     public void printAnimalInfo(){
         Settings settings = new Settings();
-        SimpleDateFormat dateFormat = new SimpleDateFormat(settings.getDateFormat());
-        System.out.printf("Name: %s, Date of Birth: %s, Commands: %s", name, dateFormat.format(dateOfBirth));
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(settings.getDateFormat());
+        System.out.printf("Name: %s, Date of Birth: %s, Commands: %s\n", name, dateOfBirth, commands.toString());
     }
+
+    public void printCommands(){
+        System.out.println(commands.toString());
+    }
+
 }

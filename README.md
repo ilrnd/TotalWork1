@@ -36,6 +36,7 @@ cat Pets PackAnimals >HumanFriends.txt
 ls
 ```
 ![805222410bb2a05527fa6870419f9ff4.png](../main/_resources/805222410bb2a05527fa6870419f9ff4.png)
+
 Проверим содержимое файла:
 ![190f2b3dd53320ca2d65a19a536d5c3d.png](../main/_resources/190f2b3dd53320ca2d65a19a536d5c3d.png)
 
@@ -48,13 +49,18 @@ cd animals/
 ls
 ```
 ![3b87ae6d7c4aa88ea32a582c038f16a0.png](../main/_resources/3b87ae6d7c4aa88ea32a582c038f16a0.png)
+
 3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
 - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
+
 `- sudo apt install mysql-server mysql-client`
+
 ![f5978fc998e7e950904d9fedc19c6c5b.png](../main/_resources/f5978fc998e7e950904d9fedc19c6c5b.png)
 4. Управление deb-пакетами
 5. - Установить и затем удалить deb-пакет, используя команду `dpkg`.
 Скачиваем deb пакет. Для примера установим mysql-connector:
+
+
 `dpkg -i mysql-connector-j_8.1.0-1ubuntu22.04_all.deb`
 ![6a2bd647338101289658e5dc366dd0a4.png](../main/_resources/6a2bd647338101289658e5dc366dd0a4.png)
 5. История команд в терминале Ubuntu

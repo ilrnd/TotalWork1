@@ -1,10 +1,9 @@
-package org.example;
+package org.example.Model;
 
-import java.text.SimpleDateFormat;
+import org.example.Settings;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.List;
 
 public abstract class Animals {
     final private String name;

@@ -1,8 +1,9 @@
-package org.example;
+package org.example.Model.PackAnimalsPack;
+
+import org.example.Model.Animals;
+import org.example.Model.Commands;
 
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.List;
 
 public abstract class PackAnimals extends Animals {
     private final String superType = "Pack Animals";

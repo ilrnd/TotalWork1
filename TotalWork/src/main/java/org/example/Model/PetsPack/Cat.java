@@ -1,10 +1,8 @@
-package org.example.PetsPack;
+package org.example.Model.PetsPack;
 
-import org.example.Commands;
-import org.example.Pets;
+import org.example.Model.Commands;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Cat extends Pets {
     private final String type = "Cat";

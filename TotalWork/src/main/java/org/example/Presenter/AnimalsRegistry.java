@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Presenter;
+
+import org.example.Model.Animals;
 
 import java.util.ArrayList;
 import java.util.List;

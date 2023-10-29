@@ -1,10 +1,8 @@
-package org.example.PackAnimalsPack;
+package org.example.Model.PackAnimalsPack;
 
-import org.example.Commands;
-import org.example.PackAnimals;
+import org.example.Model.Commands;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Camel extends PackAnimals {
 

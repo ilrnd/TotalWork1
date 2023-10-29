@@ -1,9 +1,11 @@
-package org.example;
+package org.example.Model.PetsPack;
+
+import org.example.Model.Animals;
+import org.example.Model.Commands;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-public abstract class Pets extends Animals{
+public abstract class Pets extends Animals {
     private final String superType = "Pets";
 
     public Pets(String name, LocalDate dateOfBirth, Commands commands) {

@@ -1,7 +1,10 @@
 package org.example;
 
-import org.example.PackAnimalsPack.Camel;
-import org.example.PetsPack.Cat;
+import org.example.Model.Animals;
+import org.example.Model.Commands;
+import org.example.Model.PackAnimalsPack.Camel;
+import org.example.Model.PetsPack.Cat;
+import org.example.Presenter.AnimalsRegistry;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;

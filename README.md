@@ -29,7 +29,7 @@ donkey
 ```
 Проверяем содержимое корневого каталога командой ls
 `ls`
-![9ee27bd26a69f83ee4866d5e97485c33.png](../_resources/9ee27bd26a69f83ee4866d5e97485c33.png)
+![9ee27bd26a69f83ee4866d5e97485c33.png](../main/_resources/9ee27bd26a69f83ee4866d5e97485c33.png)
 Объединяем два файла в один и записываем данные в файл HumanFriends:
 ```
 cat Pets PackAnimals >HumanFriends.txt
@@ -47,7 +47,7 @@ mv HumanFriends.txt animals/
 cd animals/
 ls
 ```
-![3b87ae6d7c4aa88ea32a582c038f16a0.png](../_resources/3b87ae6d7c4aa88ea32a582c038f16a0.png)
+![3b87ae6d7c4aa88ea32a582c038f16a0.png](../main/_resources/3b87ae6d7c4aa88ea32a582c038f16a0.png)
 3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
 - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
 `- sudo apt install mysql-server mysql-client`

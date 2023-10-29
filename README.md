@@ -56,6 +56,7 @@ ls
 `- sudo apt install mysql-server mysql-client`
 
 ![f5978fc998e7e950904d9fedc19c6c5b.png](../main/_resources/f5978fc998e7e950904d9fedc19c6c5b.png)
+
 4. Управление deb-пакетами
 - Установить и затем удалить deb-пакет, используя команду `dpkg`.
 Скачиваем deb пакет. Для примера установим mysql-connector:

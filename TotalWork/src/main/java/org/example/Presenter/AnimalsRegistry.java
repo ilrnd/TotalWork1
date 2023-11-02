@@ -33,7 +33,7 @@ public class AnimalsRegistry {
         if (animal.getName() != null && animal.getDateOfBirth() !=null && animal.getCommands() != null) {
             animalsList.add(animal);
             counter++;
-            dBconnector.addSQL("'" + animal.getName() +"'","'type'" , "'" + animal.getDateOfBirth().toString() + "'", "'" + animal.getCommands().toString() + "'");
+            dBconnector.addSQL("'" + animal.getName() +"'","'" + animal.getClass().getSimpleName() + "'" , "'" + animal.getDateOfBirth().toString() + "'", "'" + animal.getCommands().toString() + "'");
         }
         else System.out.println("Adding animal is impossible, incorrect data format");
     }

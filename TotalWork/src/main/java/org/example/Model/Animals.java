@@ -5,7 +5,7 @@ import org.example.Settings;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public abstract class Animals implements Traineble {
+public abstract class Animals implements Traineble, Comparable<Animals> {
     private static int count = 0;
     private int id;
     final private String name;
@@ -49,6 +49,11 @@ public abstract class Animals implements Traineble {
 
     public void printCommands(){
         System.out.println(commands.toString());
+    }
+
+    @Override
+    public int compareTo(Animals o) {
+        return  this.getDateOfBirth().compareTo(o.getDateOfBirth());
     }
 
 }

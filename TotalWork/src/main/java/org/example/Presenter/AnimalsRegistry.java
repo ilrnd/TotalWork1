@@ -3,6 +3,8 @@ package org.example.Presenter;
 import org.example.Model.Animals;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class AnimalsRegistry {
@@ -18,6 +20,7 @@ public class AnimalsRegistry {
     }
 
     public void printAnimalRegistry(){
+        Collections.sort(animalsList);
         for(Animals animal: animalsList){
             animal.printAnimalInfo();
         }

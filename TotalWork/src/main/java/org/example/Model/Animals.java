@@ -5,10 +5,15 @@ import org.example.Settings;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public abstract class Animals {
+public abstract class Animals implements Traineble {
+    private static int count = 0;
+    private int id;
     final private String name;
     final private LocalDate dateOfBirth;
     private Commands commands;
+    {
+         this.id = ++count;
+    }
 
     public Animals(String name, LocalDate dateOfBirth, Commands commands) {
         this.name = name;
@@ -28,10 +33,18 @@ public abstract class Animals {
         return commands;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setCommands(Commands commands) {
+        this.commands = commands;
+    }
+
     public void printAnimalInfo(){
         Settings settings = new Settings();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(settings.getDateFormat());
-        System.out.printf("Name: %s, Date of Birth: %s, Commands: %s\n", name, dateOfBirth, commands.toString());
+        System.out.printf("ID: %d Name: %s, Date of Birth: %s, Commands: %s\n", id, name, dateOfBirth, commands.toString());
     }
 
     public void printCommands(){

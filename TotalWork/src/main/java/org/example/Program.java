@@ -5,6 +5,7 @@ import org.example.resources.DBconnector;
 
 
 public class Program {
+    DBconnector dBconnector = new DBconnector();
     public static void main(String[] args) {
         Program program = new Program();
         program.run();
@@ -12,7 +13,5 @@ public class Program {
     public void run() {
         Menu menu = new Menu();
         menu.startMenu();
-        DBconnector dBconnector = new DBconnector();
-        dBconnector.connection();
     }
 }
